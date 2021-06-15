@@ -1,0 +1,222 @@
+
+.Comments{
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    width:100%;
+    background: linear-gradient(24deg, rgba(250,184,0,1) 0%, rgba(192,22,204,1) 100%);
+}
+
+.Single_Comment{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(207, 223, 224);
+    border-radius: 10px;
+    border:1px solid transparent;
+    margin:5px 10px;
+    box-shadow:  4px 4px 4px 0 rgba(0, 0, 0, 0.418);
+}
+.Single_Comment_hat{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+.Comments_post_img{
+    width:70px;
+    height:70px;
+    border-radius: 100%;
+}
+.Comments_post_author{
+    font-size: 30px;
+    color:rgb(53, 53, 53);
+    padding-left:10px ;
+    padding-right:20px ;
+}
+.Comments_post_timePosted{
+    font-size: 18px;
+    color:rgb(53, 53, 53);
+    font-style: italic;
+    padding-top: 10px;
+} 
+.Comments_post_body{
+    padding:10px 20px;
+    font-size: 18px;
+   overflow-wrap: break-word;
+}
+
+
+
+.comments_form{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(235, 243, 245);
+    border-radius: 10px;
+    border:1px solid transparent;
+    margin:5px 10px;
+    box-shadow:  4px 4px 4px 0 rgba(0, 0, 0, 0.418);
+}
+.comment_form_hide{
+    display: none;
+}
+.comments_form_img{
+    position: relative;
+    display: flex;
+}
+.comments_form_img_upload{
+   display: none;
+    
+}
+.comments_form_img-label{
+    color:#0fc718b6;
+    font-size: 36px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    
+}
+.comments_form_img-label:hover{
+    color:rgba(12, 243, 24, 0.993);
+}
+.comments_form_img-label:focus{
+    color:rgba(12, 243, 24, 0.993);
+}
+
+.comments_form_img_preview{
+    width:100px;
+    height:100px;
+    border:none;
+    border-radius: 100%;
+}
+.comments_form_text{
+display: flex;
+flex-direction: column;
+width:70%;
+gap:10px;
+margin:10px 30px;
+
+}
+.comments_form_text_author,
+.comments_form_text_post{
+    border:none;
+    border-bottom: 1px solid rgb(114, 114, 114);
+    background: transparent;
+    width:50%;
+    font-size: 20px;
+    outline: none;
+    color: rgb(41, 41, 41);
+}
+.comments_form_text_post{
+    width:100%; 
+}
+.comments_form_text_author::placeholder{
+    color: rgb(139, 139, 185);
+}
+.comments_form_text_post::placeholder{
+    color: rgb(139, 139, 185);
+}
+.comments_form_submit{
+    cursor: pointer;
+    border:none;
+    border-radius: 100%;
+    color:white;
+    background: rgba(15, 199, 24, 0.712);
+    width:50px;
+    height:50px;
+    font-size: 30px;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.479);
+    transition: 0.3s;
+}
+.comments_form_submit:hover{
+    background: rgba(12, 243, 24, 0.993);
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.753);
+}
+.Comment_Form_toggle_button,
+.Comments_toggle_button_button{
+    border:none;
+    background: transparent;
+    outline: none;
+    width:60px;
+    height:60px;
+    color:rgb(35, 202, 35);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.Comments_toggle_button{
+    position: absolute;
+    bottom:20px;
+    padding:10px;
+}
+
+.Comments_toggle_button_button{
+    color:rgb(153, 1, 153);
+}
+.Comments_Hidden{
+    display: none;
+}
+@media screen and (max-width:750px){
+    .comments_form{
+        padding: 10px 20px;
+    }
+    .comments_form_submit{
+        transform: translateX(15px);
+    }
+    .comments_form_text{
+        width:70%;
+        margin:10px 0px 10px 20px;
+    }
+    .comments_form_img_preview{
+        width:90px;
+        height:90px;
+    }
+}
+@media screen and (max-width:650px){
+    .Comments_post_author{
+        font-size: 28px;
+    }
+    .Comments_post_timePosted{
+        font-size: 16px;
+    } 
+
+    .comments_form{
+        padding: 10px 10px;
+    }
+    .comments_form_submit{
+        transform: translateX(0px);
+    }
+    .comments_form_text{
+        width:65%;
+        margin:10px 0px 10px 15px;
+    }
+    .comments_form_img_preview{
+        width:80px;
+        height:80px;
+    }
+    .comments_form_img-label{
+        font-size: 30px;
+        bottom: 0px;
+        right: 0px;
+        
+    }
+}
+@media screen and (max-width:550px){
+    .Comments_post_author{
+        font-size: 24px;
+    }
+    .comments_form{
+        padding: 7px 8px;
+    }
+    
+    .comments_form_text{
+        width:60%;
+        margin:10px 0px 10px 10px;
+    }
+    
+    .comments_form_img-label{
+        bottom: 3px;
+        right: 3px;
+        
+    }
+}
